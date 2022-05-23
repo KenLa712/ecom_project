@@ -3,7 +3,7 @@
 import os
 import sys
 
-
+#ich habe etwas geändert.
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ecommerce.settings')
