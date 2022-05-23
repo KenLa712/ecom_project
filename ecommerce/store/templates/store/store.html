@@ -4,21 +4,74 @@
 {% block content %}
 
 <div class="row">
-    {% for product in products %}
-    <div class="col-lg-4">
-        <img class="thumbnail" src="{{product.imageURL}}">
-        <div class="box-element product">
-            <h6><strong>{{product.name}}</strong></h6>
-            <hr>
+<!------HOME---------------------------------------->
 
-            <button data-product="{{product.id}}" data-action="add" class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
-            
-            <a class="btn btn-outline-success" href="#">View</a>
-            <h4 style="display: inline-block; float: right"><strong>${{product.price}}</strong></h4>
+<div id="home">
+    <a href="#" > <img src="https://images.hugoboss.com/is/image/boss/180910_W18FW_BOSS_MIG_Collage_Man?$large$&align=0,-1&fit=crop,1&hei=365&op_brightness=-0&ts=1538122905727&wid=1680" alt="Startseite" align="left" style = "width: max-width; height: auto; margin-bottom: 60px; margin-left:-10px"></a>
+	
+  </div>
+  
+  <!------SALES------------------------------------>
 
+<section id="sales">
+    <ul>
+    <li><a href="#"><img src="https://www.brautbluete.de/wp-content/uploads/2018/09/sale-lp-up-to-50-off-frye_9.jpg" align= "middle" width= "auto" height= "auto" alt="sale" style="
+    margin-left: -40px;
+"></a></li>
+ 
+	
+	</ul>
+</section>
+<!------NEUHEITEN------------------------------------>
+
+<section id="neuheiten">
+    <ul>
+        <li><a href="#"><img src="https://mosaic03.ztat.net/vgs/media/spp-media/w320/9f8f8113d64d474086b3383ced6ee5ea/f14e9aea07174e5b9313f9398d0f721c.jpeg" style="margin:10px; margin-left: 15px;" align= "left" width= "250" height= "250" border="0" alt="Anzug_01"></a></li>
+        <li><a href="#"><img src="https://mosaic03.ztat.net/vgs/media/spp-media/w320/ee7b7a6fa4424642926fc4a2de7a8589/3eb30bbb84524f848e11356caa30d59d.jpeg" style="margin:10px" align= "left" width= "250" height= "250" border="0" alt="Anzug_02"></a></li>
+        <li><a href="#"><img src="https://mosaic03.ztat.net/vgs/media/spp-media/w320/40df47926f86486e8cd747c4945d4015/c9e4015495e1418d88c12af36d0964b5.jpeg" style="margin:10px" align= "left" width= "250" height= "250" border="0" alt="Anzug_03"></a></li>
+        <li><a href="#"><img src="https://mosaic03.ztat.net/vgs/media/spp-media/w320/5267634dbeb1464ba68a3e877460bf5a/da747820ddd346b5ae5d773b465c4e80.jpeg" style="margin:10px" align= "left" width= "250" height= "250" border="0" alt="Anzug_04"></a></li>
+    </ul>	
+</section>
+
+
+  <div id="box1"><a href="#" style="display:block;">
+<p style= "color: grey; margin-bottom: 0px; font-weight: 700;">Neuheiten der Woche</p>
+<p style="color: black; font-weight: 700">Unsere Favoriten</p>
+<a href="#" style="color: black; font-size: 15px; font-weight: 500;"><u>Jetzt shoppen</u></a></a>
+</div>
+
+
+<!-------- KATEGORIEN ------------------------>
+
+<!-----
+<video width="1200px" height="auto" style="margin-top: 100px" controls>
+  <source src="C:\Users\ipek_\Downloads\1268729919001_5830157730001_5830158065001.mp4" type="video/mp4">
+</video>
+------>
+<div id="business">
+    <a href="#" > <img src="https://images.hugoboss.com/is/image/boss/1680x945px-P01_BM_Essentials+to+pack?$large$&align=0,-1&cropN=0.0166015625,0.029513888888888888888888888888889,0.9697265625,0.97048611111111111111111111111111&fit=crop,1&hei=945&op_brightness=-0&ts=1531388419037&wid=1680" alt="Startseite" align="center" style = "width: max-width; height: auto; margin-top: 100px; margin-bottom: 50px;"></a>
+  </div>
+
+
+	
+
+    <footer>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https://www.snapchat.com/l/de-de/" class="fa fa-snapchat-ghost"></a>
+          <p>
+         <ul>
+        <li><a href="#" style= "color: white">Hilfe</a></li>
+           <li><a href="#" style= "color: white">Datenschutz</a></li>
+              <li><a href="#" style= "color: white">Impressum</a></li>
+                <li><a href="#" style= "color: white">FAQ</a></li>	
+        </ul>
         </div>
-    </div>
-    {% endfor %}
+    </footer>
 </div>
 
 {% endblock content %}
