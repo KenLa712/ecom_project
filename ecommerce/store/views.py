@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .forms import NewUserForm
 from django.contrib.auth import login
 from django.contrib import messages
+from .models import * 
 
 #Views für unsere Seiten erstellt, indem die templates gerendert werden
 
