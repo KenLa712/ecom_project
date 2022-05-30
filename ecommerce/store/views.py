@@ -1,3 +1,4 @@
+from multiprocessing import context
 from django.shortcuts import render
 from .forms import NewUserForm
 from django.contrib.auth import login
@@ -17,6 +18,15 @@ def cart(request):
 def checkout(request):
       context = {}
       return render(request, 'store/checkout.html', context)
+	  
+def login(request):
+      context = {}
+      return render(request, 'store/login.html', context)
+
+def main(request):
+      context = {}
+      return render(request, 'store/main.html', context)
+
 
 
 # Funktion um Registrierung durchzuführen
@@ -30,4 +40,4 @@ def register_request(request):
 			return redirect("store:homepage")
 		messages.error(request, "Unsuccessful registration. Invalid information.")
 	form = NewUserForm()
-	return render (request=request, template_name="store/registration.html", context={"register_form":form})
+	return render (request=request, template_name="store/register.html", context={"register_form":form})

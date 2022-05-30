@@ -18,7 +18,8 @@
 
         <nav id="second-nav">
             <ul>
-                <li><a href="#">Mein Konto</a></li>
+                <li><a href="{% url 'login' %}">Anmelden</a></li>
+                <li><a href="{% url 'register' %}">Registrieren</a></li>
                 <li><a href="{% url 'cart' %}">Warenkorb</a></li>  
             </ul>
           </nav>
