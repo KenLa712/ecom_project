@@ -28,6 +28,10 @@ def main(request):
       return render(request, 'store/main.html', context)
 
 
+def products(request):
+      context = {}
+      return render(request, 'store/products.html', context)
+
 
 # Funktion um Registrierung durchzuführen
 def register_request(request):

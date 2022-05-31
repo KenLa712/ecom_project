@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="{% static 'store.js' %}"></script>  
+    <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet">
+  </head>
+
+<!------HEADER---------------------------------------->
+
+<header>
+
+  <nav id="second-nav">
+      <ul>
+          <li><a href="x">Mein Konto</a></li>
+          <li><a href="#warenkorb">Warenkorb</a></li>   
+      </ul>
+    </nav>
+
+  </header>
+    <body>
+<div>
+  <nav id="main-nav">
+      <ul>
+     <li><a href= "#">Neuheiten</a>
+    <ul>
+	<li><a href="#">Alle Kategorien</a></li>
+   <li><a href="#">Bekleidung</a></li>
+    <li><a href="#">Accessoires</a></li>
+   </ul>
+  </li>
+  <li><a href="#">Bekleidung</a>
+  <ul>
+  <li><a href="#">Alle Kategorien</a></li>
+   <li><a href="#">Anzüge</a></li>
+    <li><a href="#">Smokings</a></li>
+	 <li><a href="#">Hemden</a></li>
+	 <li><a href="#">Anzughosen</a></li>
+	 <li><a href="#">Anzugwesten</a></li>
+	 <li><a href="#">Anzugsakkos</a></li>
+   </ul>
+  </li>
+   <li><a href="#">Accessoires</a>
+  <ul>
+  <li><a href="#">Alle Kategorien</a></li>
+   <li><a href="#">Krawatten</a></li>
+    <li><a href="#">Fliegen</a></li>
+	 <li><a href="#">Hüte</a></li> 
+	 <li><a href="#">Gürtel</a></li>
+	 <li><a href="#">Hemdknöpfe</a></li>
+	 <li><a href="#">Manschettenknöpfe</a></li>
+	 <li><a href="#">Einstecktücher</a></li>
+	   <li><a href="#">Taschen</a></li>
+   </ul>
+  </li> 
+   <li><a href="#">Schuhe</a>
+   <ul>
+   <li><a href="#">Alle Kategorien</a></li>
+   <li><a href="#">Klassisch</a></li>
+   <li><a href="#">Extravagant</a></li>
+   <li><a href="#">Boots</a></li>
+   <li><a href="#">Slipper</a></li>
+   <li><a href="#">Mokassins</a></li>
+   </ul>
+   </li>
+  
+  <li><a href="#">Sale</a>
+    <ul>
+   <li><a href="#">Alle Kategorien</a></li>
+    <li><a href="#">Bekleidung</a></li>
+	 <li><a href="#">Accessoires</a></li>
+      </ul>
+    </nav>
+	</div>
+	
+	<!--------SUCHLEISTE-------------------------->
+	
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+ <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet">
+<div class="col-md-3">
+
+<form action = "#" target="_blank">
+  <form class="navbar-form" role="search">
+    <div class="input-group add-on" style="
+    width: 242px;
+    margin-left: 40px;
+    margin-top: 10px;
+">
+      <input class="form-control" placeholder="Suche" name="srch-term" id="srch-term" type="text">
+      <div class="input-group-btn">
+        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+      </div>
+    </div>
+  </form>
+  </form>
+</div>
+	<!--------SEITENNAVIGATION-------------------------->
+<div class="col-md-3">
+  <form class="navbar-form" role="search">
+    </div>
+  </form>
+</div>
+<div class="sidenav" style="left: -430px;padding-top: 50px;top: 50px;">
+ <a href="#"><b>Bekleidung</b></a>
+  <a href="#">Anzüge</a>
+  <a href="#Smokings">Smokings</a>
+  <a href="#Hemden">Hemden</a>
+  <a href="#Anzughosen">Anzughosen</a>
+   <a href="#Anzugwesten">Anzugwesten</a>
+    <a href="#Anzugsakkos">Anzugsakkos</a> <br>
+	
+	 <a href="#"><b>Accessoires</b></a>
+	 <a href="#Anzüge">Krawatten</a>
+	 <a href="#Anzüge">Fliegen</a>
+	 <a href="#Anzüge">Hüte</a>
+	 <a href="#Anzüge">Gürtel</a>
+	 <a href="#Anzüge">Hemdknöpfe</a>
+	 <a href="#Anzüge">Einstecktücher</a> 
+	 <a href="#Anzüge">Taschen</a><br>
+	 
+	 
+	  <a href="#Accessoires"><b>Schuhe</b></a>
+	 <a href="#Anzüge">Klassisch</a>
+	 <a href="#Anzüge">Extravagant</a>
+	 <a href="#Anzüge">Boots</a>
+	 <a href="#Anzüge">Slipper</a>
+	 <a href="#Anzüge">Mokassins</a>
+</div>
+<div class="main" style="
+    margin-top: -600px;">
+	<div class="container bootstrap snipets" style="height: 972px; width: 830px";>
+	  <div class="row flow-offset-1">
+	
+         <div class="col-xs-6 col-md-4">
+		    <div class="product tumbnail thumbnail-3">
+            <div class="shop-items">
+                <div class="shop-item">
+                    <img class="shop-item-image" src="https://mediastorage.soliver.com/is/image/soliver/anzug_811_02_front?$SORL_OV_grey-2x$" alt=""  height= "270px" width= "200px">
+                    <span class="shop-item-title">Gemusterter Stretch-Anzug</span>
+					<div class="shop-item-details">
+                        <span class="shop-item-price">$249.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Zum Warenkorb hinzufügen</button>
+                    </div>
+                </div>
+				</div>
+				</div>
+		</div>
+			<div class="col-xs-6 col-md-4">
+                <div class="shop-item">
+                    <img class="shop-item-image" src="https://mediastorage.soliver.com/is/image/soliver/anzug_899_2018_06_front?$SORL_OV_grey-2x$" alt=""  height= "270px" width= "200px">
+                    <div class="caption">
+					<span class="shop-item-title">Anzug im Glencheck-Design</span>
+					<div class="shop-item-details">
+                        <span class="shop-item-price">$229.99</span>
+						</div>
+                        <button class="btn btn-primary shop-item-button" type="button">Zum Warenkorb hinzufügen</button>
+                    </div>
+				</div>
+				</div>
+			
+		
+    				  <div class="col-xs-6 col-md-4">
+                <div class="shop-item" >
+                    <img class="shop-item-image" src="https://mediastorage.soliver.com/is/image/soliver/12.810.91.2309.89A3_front?$SORL_SPVP_grey$" alt=""  height= "270px" width= "200px">
+                  <div class="caption">  <span class="shop-item-title">Krawatte mit Strukturmuster</span>
+					<div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+						 </div></div>
+                        <button class="btn btn-primary shop-item-button" type="button">Zum Warenkorb hinzufügen</button>
+				</div>
+				</div>
+				</div>
+				
+				  <div class="col-xs-6 col-md-4">
+                <div class="shop-item" >
+                    <img class="shop-item-image" src="https://img01.ztat.net/article/spp-media-p1/d7fd944d79c23492a2d8b97565b0343c/648c777eff0b49868174f6596b7ef9e2.jpg?imwidth=762" alt=""  height= "270px" width= "200px">
+                  <div class="caption">  <span class="shop-item-title">Superstretch-Anzug</span>
+					<div class="shop-item-details">
+                        <span class="shop-item-price">$259.99</span>
+						 </div></div>
+                        <button class="btn btn-primary shop-item-button" type="button">Zum Warenkorb hinzufügen</button>
+				</div>
+				</div>
+			
+					  <div class="col-xs-6 col-md-4">
+                <div class="shop-item" >
+                    <img class="shop-item-image" src="https://mediastorage.soliver.com/is/image/soliver/12.810.21.4429.7938_front?$SORL_SPVP_grey$" alt=""  height= "270px" width= "200px">
+                  <div class="caption">  <span class="shop-item-title">Kragenloses Hemd</span>
+					<div class="shop-item-details">
+                        <span class="shop-item-price">$49.99</span>
+						 </div></div>
+                        <button class="btn btn-primary shop-item-button" type="button">Zum Warenkorb hinzufügen</button>
+				</div>
+				</div>
+				  <div class="col-xs-6 col-md-4">
+                <div class="shop-item"  >
+                    <img class="shop-item-image" src="https://mediastorage.soliver.com/is/image/soliver/12.809.91.2309.59A3_front?$SORL_SPVP_grey$" alt=""  height= "270px" width= "200px">
+                  <div class="caption">  <span class="shop-item-title">Seidenkrawatte mit Muster</span>
+					<div class="shop-item-details">
+                        <span class="shop-item-price">$29.99</span>
+						 </div></div>
+                        <button class="btn btn-primary shop-item-button" type="button">Zum Warenkorb hinzufügen</button>
+				</div>
+				</div>
+				</div>
+				</div>
+			<div>
+            <h2 class="section-header" id = "warenkorb" style= "background-color: #c3c3c3; margin-top: 50px; padding-top: 20px;padding-bottom: 20px;">Warenkorb</h2>
+            <div class="cart-items">
+            </div> 
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+			   <span class="cart-total-price" id="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button"  onclick="window.location.href='Warenkorb.html'" >Jetzt kaufen</button>
+       </div>
+	  
+	  
+ <!------FOOTER----------------------------------------> 
+<footer>
+<div class="footer" style="margin-top: 50px">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<a href="https://www.facebook.com/" class="fa fa-facebook" style="
+    margin-left: 30px;
+"></a>
+<a href="https://twitter.com/" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+<a href="https://www.snapchat.com/l/de-de/" class="fa fa-snapchat-ghost"></a>
+  <p>
+ <ul>
+<li><a href="#" style= "color: white">Hilfe</a></li>
+   <li><a href="C:\Users\ipek_\Desktop\HTML\Datenschutz.html" style= "color: white">Datenschutz</a></li>
+	  <li><a href="C:\Users\ipek_\Desktop\HTML\Support.html" style= "color: white">Impressum</a></li>
+	    <li><a href="#" style= "color: white">FAQ</a></li>	
+</ul>
+</div>
+</footer>	
+</body>
+{% block content %}
+{% endblock content %}
+</html>
+
+<style>
+.shop-item-title {
+font-size: 12px;
+color: black;
+
+}
+.shop-item-price {
+font-size: 13px;
+color:black;
+font-weight: 800px;
+}
+
+.cart-item-title {
+font-size: 12px;
+}
+
+
+
+.cart-total-title {
+font-size: 12px;
+}
+
+.cart-total-price {
+font-size: 13px;
+font-weight: 500px;
+}
+
+.cart-price cart-column {
+font-size: 12px;
+}
+
+.shop-item {
+margin-top: 20px;
+}
+
+.btn btn-primary shop-item-button {
+background-color:  black;
+border-color: black;
+}
+
+.cart-total {
+margin-top: 30px;
+}
+
+</style>
+
+<script>
+  /* Document.redyState beschreibt Ladezustand des document-Objektes */
+if (document.readyState == 'loading') {
+    document.addEventListener('DOMContentLoaded', ready)
+} else {
+    ready()
+}
+/* Wenn man Löschbutton, Mengen-Input und Warenkorb Button betätigt, wird Aktion erzeugt durch click*/
+/* Werden dann in Array gespeichert*/
+function ready() {
+    var removeCartItemButtons = document.getElementsByClassName('btn-danger')
+    for (var i = 0; i < removeCartItemButtons.length; i++) {
+        var button = removeCartItemButtons[i]
+        button.addEventListener('click', removeCartItem)
+    }
+
+    var quantityInputs = document.getElementsByClassName('cart-quantity-input')
+    for (var i = 0; i < quantityInputs.length; i++) {
+        var input = quantityInputs[i]
+        input.addEventListener('change', quantityChanged)
+    }
+
+    var addToCartButtons = document.getElementsByClassName('shop-item-button')
+    for (var i = 0; i < addToCartButtons.length; i++) {
+        var button = addToCartButtons[i]
+        button.addEventListener('click', addToCartClicked)
+    }
+
+    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+}
+/*"Jetzt kaufen" klicken und Einkauf abschließen*/
+/* Fenster mit Weiterleitung wird angezeigt*/
+function purchaseClicked() {
+    alert('Sie werden weitergeleitet. Bitte auf "OK" klicken.')
+    var cartItems = document.getElementsByClassName('cart-items')[0]
+    while (cartItems.hasChildNodes()) {
+        cartItems.removeChild(cartItems.firstChild)
+    }
+    updateCartTotal()
+}
+/* wenn Produkt aus Warenkorb gelöscht wird*/
+/* neuer Preis und Mengen werden aktualisiert*/
+function removeCartItem(event) {
+    var buttonClicked = event.target
+    buttonClicked.parentElement.parentElement.remove()
+    updateCartTotal()
+}
+/* Wenn Anzahl eines Produkts im Warenkorb mit einem unzulässigen Zeichen/Zahl verändert wird*/
+function quantityChanged(event) {
+    var input = event.target
+    if (isNaN(input.value) || input.value <= 0) {
+        input.value = 1
+    }
+    updateCartTotal()
+}
+/*Wenn man dem Warenkorb ein Produkt hinzufügt*/
+/*Titel, Preis und Bild werden in Variablen gespeichert*/
+/*Funktion addItemToCart() wird aufgerufen*/
+function addToCartClicked(event) {
+    var button = event.target
+    var shopItem = button.parentElement.parentElement
+    var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
+    var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
+    var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
+    addItemToCart(title, price, imageSrc)
+    updateCartTotal()
+}
+/*Produkt wird im Array gespeichert*/
+/*in Array wird überprüft, ob gleiches Produkt schon bereits im Warenkorb liegt*/
+/*Wenn ja, Meldung -> Wenn nein, dann wird sie hinzugefügt*/
+/*es wird bei jedem Produkt ein <div> erzeugt*/
+function addItemToCart(title, price, imageSrc) {
+    var cartRow = document.createElement('div')
+    cartRow.classList.add('cart-row')
+    var cartItems = document.getElementsByClassName('cart-items')[0]
+    var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
+    for (var i = 0; i < cartItemNames.length; i++) {
+        if (cartItemNames[i].innerText == title) {
+            alert('Dieses Produkt wurde schon bereits hinzugefügt. Bitte ändern Sie die Anzahl des Produkts unten im Warenkorb.')
+            return
+        }
+    }
+    var cartRowContents = `
+        <div class="cart-item cart-column">
+            <img class="cart-item-image" style="margin-top: 10px; margin-left: 0px; margin-bottom: 10px; float: center;" src="${imageSrc}" width="100" height="100">
+            <span class="cart-item-title">${title}</span>
+       
+        <span class="cart-price cart-column">${price}</span> </div>
+        <div class="cart-quantity cart-column">
+            <input class="cart-quantity-input" 
+			style="width: 60px; margin-right: 50px; margin-left: -200; margin-left: -100; margin-left: -100px;" type="number" value="1">
+            <button class="btn btn-danger" type="button">Löschen</button>
+        </div>`
+	/* Produkt wird der Liste hinzugefügt*/
+    cartRow.innerHTML = cartRowContents
+    cartItems.append(cartRow)
+    cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
+    cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
+}
+/*Preise werden summiert und in der Variable "total" gespeichert*/
+function updateCartTotal() {
+    var cartItemContainer = document.getElementsByClassName('cart-items')[0]
+    var cartRows = cartItemContainer.getElementsByClassName('cart-row')
+	total = 0
+    for (var i = 0; i < cartRows.length; i++) {
+        var cartRow = cartRows[i]
+        var priceElement = cartRow.getElementsByClassName('cart-price')[0]
+        var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
+        var price = parseFloat(priceElement.innerText.replace('$', ''))
+        var quantity = quantityElement.value
+        total = total + (price * quantity)
+    }
+    total = Math.round(total * 100) / 100
+    document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total 
+
+	}
+</script>
