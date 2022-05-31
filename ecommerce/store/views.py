@@ -1,11 +1,13 @@
-from multiprocessing import context
-from django.shortcuts import render
+
+#Views für unsere Seiten erstellt, indem die templates gerendert werden
+from django.shortcuts import render, redirect
+from django.http import JsonResponse
+import json
+import datetime
 from .forms import NewUserForm
 from django.contrib.auth import login
 from django.contrib import messages
 from .models import * 
-
-#Views für unsere Seiten erstellt, indem die templates gerendert werden
 
 def store(request):
      context = {}
@@ -29,7 +31,14 @@ def main(request):
 
 
 def products(request):
-      context = {}
+      
+      #data = cartData(request)
+      #cartItems = data['cartItems']
+      #order = data['order']
+      #items = data['items']
+      
+      products = Produkt.objects.all()
+      context = {'products':products}
       return render(request, 'store/products.html', context)
 
 

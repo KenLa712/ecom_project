@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 {% load static %}
 
 <html lang="de" dir="ltr">
@@ -8,6 +7,7 @@
     <script src="{% static 'store.js' %}"></script>  
     <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet">
   </head>
+
 
 <!------HEADER---------------------------------------->
 
@@ -75,7 +75,7 @@
       </ul>
     </nav>
 	</div>
-	
+
 	<!--------SUCHLEISTE-------------------------->
 	
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -129,84 +129,38 @@
 	 <a href="#Anzüge">Slipper</a>
 	 <a href="#Anzüge">Mokassins</a>
 </div>
-<div class="main" style="
-    margin-top: -600px;">
+
+
+
+{% block content %}
+<div class="main" style="margin-top: -600px;">
 	<div class="container bootstrap snipets" style="height: 972px; width: 830px";>
 	  <div class="row flow-offset-1">
-	
+        {% for produkt in products %}
          <div class="col-xs-6 col-md-4">
 		    <div class="product tumbnail thumbnail-3">
             <div class="shop-items">
                 <div class="shop-item">
-                    <img class="shop-item-image" src="https://mediastorage.soliver.com/is/image/soliver/anzug_811_02_front?$SORL_OV_grey-2x$" alt=""  height= "270px" width= "200px">
-                    <span class="shop-item-title">Gemusterter Stretch-Anzug</span>
+                    <img class="shop-item-image" src="{{produkt.imageURL}}">
+                    <span class="shop-item-title">{{produkt.name}}</span>
 					<div class="shop-item-details">
-                        <span class="shop-item-price">$249.99</span>
+                        <span class="shop-item-price">${{produkt.preis}}</span>
                         <button class="btn btn-primary shop-item-button" type="button">Zum Warenkorb hinzufügen</button>
                     </div>
                 </div>
 				</div>
 				</div>
 		</div>
-			<div class="col-xs-6 col-md-4">
-                <div class="shop-item">
-                    <img class="shop-item-image" src="https://mediastorage.soliver.com/is/image/soliver/anzug_899_2018_06_front?$SORL_OV_grey-2x$" alt=""  height= "270px" width= "200px">
-                    <div class="caption">
-					<span class="shop-item-title">Anzug im Glencheck-Design</span>
-					<div class="shop-item-details">
-                        <span class="shop-item-price">$229.99</span>
-						</div>
-                        <button class="btn btn-primary shop-item-button" type="button">Zum Warenkorb hinzufügen</button>
-                    </div>
-				</div>
-				</div>
+        {% endfor %}
+    </div>
+</div>
+</div>
+{% endblock content %}
+
+   
+			
 			
 		
-    				  <div class="col-xs-6 col-md-4">
-                <div class="shop-item" >
-                    <img class="shop-item-image" src="https://mediastorage.soliver.com/is/image/soliver/12.810.91.2309.89A3_front?$SORL_SPVP_grey$" alt=""  height= "270px" width= "200px">
-                  <div class="caption">  <span class="shop-item-title">Krawatte mit Strukturmuster</span>
-					<div class="shop-item-details">
-                        <span class="shop-item-price">$19.99</span>
-						 </div></div>
-                        <button class="btn btn-primary shop-item-button" type="button">Zum Warenkorb hinzufügen</button>
-				</div>
-				</div>
-				</div>
-				
-				  <div class="col-xs-6 col-md-4">
-                <div class="shop-item" >
-                    <img class="shop-item-image" src="https://img01.ztat.net/article/spp-media-p1/d7fd944d79c23492a2d8b97565b0343c/648c777eff0b49868174f6596b7ef9e2.jpg?imwidth=762" alt=""  height= "270px" width= "200px">
-                  <div class="caption">  <span class="shop-item-title">Superstretch-Anzug</span>
-					<div class="shop-item-details">
-                        <span class="shop-item-price">$259.99</span>
-						 </div></div>
-                        <button class="btn btn-primary shop-item-button" type="button">Zum Warenkorb hinzufügen</button>
-				</div>
-				</div>
-			
-					  <div class="col-xs-6 col-md-4">
-                <div class="shop-item" >
-                    <img class="shop-item-image" src="https://mediastorage.soliver.com/is/image/soliver/12.810.21.4429.7938_front?$SORL_SPVP_grey$" alt=""  height= "270px" width= "200px">
-                  <div class="caption">  <span class="shop-item-title">Kragenloses Hemd</span>
-					<div class="shop-item-details">
-                        <span class="shop-item-price">$49.99</span>
-						 </div></div>
-                        <button class="btn btn-primary shop-item-button" type="button">Zum Warenkorb hinzufügen</button>
-				</div>
-				</div>
-				  <div class="col-xs-6 col-md-4">
-                <div class="shop-item"  >
-                    <img class="shop-item-image" src="https://mediastorage.soliver.com/is/image/soliver/12.809.91.2309.59A3_front?$SORL_SPVP_grey$" alt=""  height= "270px" width= "200px">
-                  <div class="caption">  <span class="shop-item-title">Seidenkrawatte mit Muster</span>
-					<div class="shop-item-details">
-                        <span class="shop-item-price">$29.99</span>
-						 </div></div>
-                        <button class="btn btn-primary shop-item-button" type="button">Zum Warenkorb hinzufügen</button>
-				</div>
-				</div>
-				</div>
-				</div>
 			<div>
             <h2 class="section-header" id = "warenkorb" style= "background-color: #c3c3c3; margin-top: 50px; padding-top: 20px;padding-bottom: 20px;">Warenkorb</h2>
             <div class="cart-items">
@@ -217,8 +171,7 @@
             </div>
             <button class="btn btn-primary btn-purchase" type="button"  onclick="window.location.href='Warenkorb.html'" >Jetzt kaufen</button>
        </div>
-	  
-	  
+	  	  
  <!------FOOTER----------------------------------------> 
 <footer>
 <div class="footer" style="margin-top: 50px">
@@ -240,8 +193,7 @@
 </div>
 </footer>	
 </body>
-{% block content %}
-{% endblock content %}
+
 </html>
 
 <style>

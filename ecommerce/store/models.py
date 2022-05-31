@@ -37,6 +37,16 @@ class Produkt(models.Model):
 
     def __str__(self):
         return self.name
+    
+    @property
+    def imageURL(self):
+        try:
+            url = self.produktbild.url
+        except:
+            url = ''
+        return url 
+
+
 
 class Warenkorb(models.Model):
     zwischensumme = models.FloatField(null=True)
