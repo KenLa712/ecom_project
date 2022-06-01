@@ -28,8 +28,7 @@ def login(request):
 def main(request):
       context = {}
       return render(request, 'store/main.html', context)
-
-
+      
 def products(request):
       
       #data = cartData(request)

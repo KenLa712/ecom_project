@@ -46,10 +46,9 @@ class Produkt(models.Model):
             url = ''
         return url 
 
-
-
 class Warenkorb(models.Model):
     zwischensumme = models.FloatField(null=True)
+    kunde = models.ForeignKey(Kunde, on_delete=models.SET_NULL, null=True, blank=True)
     
 class WarenkorbProdukt(models.Model):
     warenkorb = models.ForeignKey(Warenkorb, on_delete=models.SET_NULL, null=True, blank=True)

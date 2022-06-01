@@ -17,7 +17,7 @@ urlpatterns = [
    
     #added login path
     path("login", views.login, name="login"),
-    
+
     #added register path
     path("register", views.register_request, name="register")
 ]

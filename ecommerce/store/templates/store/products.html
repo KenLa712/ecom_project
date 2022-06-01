@@ -169,7 +169,7 @@
                 <strong class="cart-total-title">Total</strong>
 			   <span class="cart-total-price" id="cart-total-price">$0</span>
             </div>
-            <button class="btn btn-primary btn-purchase" type="button"  onclick="window.location.href='Warenkorb.html'" >Jetzt kaufen</button>
+            <button class="btn btn-primary btn-purchase" type="button"  onclick="location.href= '{% url 'cart' %}'"> Zur Kasse gehen</button>
        </div>
 	  	  
  <!------FOOTER----------------------------------------> 
@@ -211,8 +211,6 @@ font-weight: 800px;
 .cart-item-title {
 font-size: 12px;
 }
-
-
 
 .cart-total-title {
 font-size: 12px;
@@ -275,7 +273,6 @@ function ready() {
 /*"Jetzt kaufen" klicken und Einkauf abschließen*/
 /* Fenster mit Weiterleitung wird angezeigt*/
 function purchaseClicked() {
-    alert('Sie werden weitergeleitet. Bitte auf "OK" klicken.')
     var cartItems = document.getElementsByClassName('cart-items')[0]
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
@@ -359,3 +356,5 @@ function updateCartTotal() {
 
 	}
 </script>
+
+
