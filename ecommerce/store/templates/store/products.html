@@ -6,23 +6,28 @@
     <meta charset="utf-8">
     <script src="{% static 'store.js' %}"></script>  
     <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet">
+    <link href="{% static 'css/products.css' %}" type="text/css" rel="stylesheet">
   </head>
 
 
-<!------HEADER---------------------------------------->
+<!---------------HEADER----------------->
 
 <header>
 
-  <nav id="second-nav">
+    <a href="http://127.0.0.1:8000/"><img class="imglogo" src="{% static 'images/logo.jpg' %}" alt="Logo"></a>
+    <img class="img2" src="{% static 'images/frankfurt.jpg' %}">
+  
+    <nav id="second-nav">
       <ul>
-          <li><a href="x">Mein Konto</a></li>
+          <li><a href="#">Mein Konto</a></li>
           <li><a href="#warenkorb">Warenkorb</a></li>   
       </ul>
     </nav>
 
   </header>
     <body>
-<div>
+
+
   <nav id="main-nav">
       <ul>
      <li><a href= "#">Neuheiten</a>
@@ -76,19 +81,14 @@
     </nav>
 	</div>
 
-	<!--------SUCHLEISTE-------------------------->
+<!--------SUCHLEISTE-------------------------->
 	
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
- <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet">
-<div class="col-md-3">
+ <div class="col-md-3">
 
 <form action = "#" target="_blank">
   <form class="navbar-form" role="search">
-    <div class="input-group add-on" style="
-    width: 242px;
-    margin-left: 40px;
-    margin-top: 10px;
-">
+    <div class="input-group add-on" style="width: 242px; margin-left: 30px; margin-top: 15px;">
       <input class="form-control" placeholder="Suche" name="srch-term" id="srch-term" type="text">
       <div class="input-group-btn">
         <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
@@ -97,14 +97,15 @@
   </form>
   </form>
 </div>
-	<!--------SEITENNAVIGATION-------------------------->
-<div class="col-md-3">
+
+<!--------SEITENNAVIGATION-------------------------->
+<div class="col-md-2">
   <form class="navbar-form" role="search">
     </div>
   </form>
 </div>
-<div class="sidenav" style="left: -430px;padding-top: 50px;top: 50px;">
- <a href="#"><b>Bekleidung</b></a>
+<div class="sidenav" style="left: -650px; padding-top: 50px; top: 15px;">
+ <a href="#"><b style="font-size:15px; color:brown">Bekleidung</b></a>
   <a href="#">Anzüge</a>
   <a href="#Smokings">Smokings</a>
   <a href="#Hemden">Hemden</a>
@@ -112,7 +113,7 @@
    <a href="#Anzugwesten">Anzugwesten</a>
     <a href="#Anzugsakkos">Anzugsakkos</a> <br>
 	
-	 <a href="#"><b>Accessoires</b></a>
+	 <a href="#"><b style="font-size:15px; color:brown">Accessoires</b></a>
 	 <a href="#Anzüge">Krawatten</a>
 	 <a href="#Anzüge">Fliegen</a>
 	 <a href="#Anzüge">Hüte</a>
@@ -122,7 +123,7 @@
 	 <a href="#Anzüge">Taschen</a><br>
 	 
 	 
-	  <a href="#Accessoires"><b>Schuhe</b></a>
+	  <a href="#Accessoires"><b style="font-size:15px; color:brown">Schuhe</b></a>
 	 <a href="#Anzüge">Klassisch</a>
 	 <a href="#Anzüge">Extravagant</a>
 	 <a href="#Anzüge">Boots</a>
@@ -133,6 +134,7 @@
 
 
 {% block content %}
+
 <div class="main" style="margin-top: -600px;">
 	<div class="container bootstrap snipets" style="height: 972px; width: 830px";>
 	  <div class="row flow-offset-1">
@@ -142,9 +144,9 @@
             <div class="shop-items">
                 <div class="shop-item">
                     <img class="shop-item-image" src="{{produkt.imageURL}}">
-                    <span class="shop-item-title">{{produkt.name}}</span>
+                    <span class="shop-item-title" style="font-size:20px">{{produkt.name}}</span>
 					<div class="shop-item-details">
-                        <span class="shop-item-price">${{produkt.preis}}</span>
+                        <span class="shop-item-price" style="font-size:15px">${{produkt.preis}}</span>
                         <button class="btn btn-primary shop-item-button" type="button">Zum Warenkorb hinzufügen</button>
                     </div>
                 </div>
@@ -157,24 +159,22 @@
 </div>
 {% endblock content %}
 
-   
-			
-			
-		
-			<div>
-            <h2 class="section-header" id = "warenkorb" style= "background-color: #c3c3c3; margin-top: 50px; padding-top: 20px;padding-bottom: 20px;">Warenkorb</h2>
+<div style="margin-left: 85%; margin-top: -60%;">
+
+<h2 class="section-header" id = "warenkorb" style= "background-color: #c3c3c3; font-size: inherit; margin-top: 50px; padding-top: 20px;padding-bottom: 20px; width: 200px;" >Dein Warenkorb:</h2>
             <div class="cart-items">
             </div> 
             <div class="cart-total">
-                <strong class="cart-total-title">Total</strong>
+                <strong class="cart-total-title" sty>Total: </strong>
 			   <span class="cart-total-price" id="cart-total-price">$0</span>
             </div>
             <button class="btn btn-primary btn-purchase" type="button"  onclick="location.href= '{% url 'cart' %}'"> Zur Kasse gehen</button>
-       </div>
-	  	  
+      
+	</div>
+
  <!------FOOTER----------------------------------------> 
 <footer>
-<div class="footer" style="margin-top: 50px">
+<div class="footer" style="margin-top: 40%">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <a href="https://www.facebook.com/" class="fa fa-facebook" style="
@@ -195,50 +195,6 @@
 </body>
 
 </html>
-
-<style>
-.shop-item-title {
-font-size: 12px;
-color: black;
-
-}
-.shop-item-price {
-font-size: 13px;
-color:black;
-font-weight: 800px;
-}
-
-.cart-item-title {
-font-size: 12px;
-}
-
-.cart-total-title {
-font-size: 12px;
-}
-
-.cart-total-price {
-font-size: 13px;
-font-weight: 500px;
-}
-
-.cart-price cart-column {
-font-size: 12px;
-}
-
-.shop-item {
-margin-top: 20px;
-}
-
-.btn btn-primary shop-item-button {
-background-color:  black;
-border-color: black;
-}
-
-.cart-total {
-margin-top: 30px;
-}
-
-</style>
 
 <script>
   /* Document.redyState beschreibt Ladezustand des document-Objektes */

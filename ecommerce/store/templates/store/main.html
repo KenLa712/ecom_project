@@ -14,7 +14,8 @@
 <body>
 
     <header>
-   
+      <a href="http://127.0.0.1:8000/"><img class="imglogo" src="{% static 'images/logo.jpg' %}" alt="Logo"></a>
+
         <img class="img2" src="{% static 'images/frankfurt.jpg' %}">
        
 
@@ -40,26 +41,26 @@
         </li>
         <li><a href="#">Bekleidung</a>
         <ul>
-        <li><a href="#">Alle Kategorien</a></li>
-         <li><a href="#">Anzüge</a></li>
-          <li><a href="#">Smokings</a></li>
-           <li><a href="#">Hemden</a></li>
-           <li><a href="#">Anzughosen</a></li>
-           <li><a href="#">Anzugwesten</a></li>
-           <li><a href="#">Anzugsakkos</a></li>
+        <li><a href="{% url 'products' %}">Alle Kategorien</a></li>
+         <li><a href="{% url 'products' %}">Anzüge</a></li>
+          <li><a href="{% url 'products' %}">Smokings</a></li>
+           <li><a href="{% url 'products' %}">Hemden</a></li>
+           <li><a href="{% url 'products' %}">Anzughosen</a></li>
+           <li><a href="{% url 'products' %}">Anzugwesten</a></li>
+           <li><a href="{% url 'products' %}">Anzugsakkos</a></li>
          </ul>
         </li>
-         <li><a href="#">Accessoires</a>
+         <li><a href="{% url 'products' %}">Accessoires</a>
         <ul>
-        <li><a href="#">Alle Kategorien</a></li>
-         <li><a href="#">Krawatten</a></li>
-          <li><a href="#">Fliegen</a></li>
-           <li><a href="#">Hüte</a></li> 
-           <li><a href="#">Gürtel</a></li>
-           <li><a href="#">Hemdknöpfe</a></li>
-           <li><a href="#">Manschettenknöpfe</a></li>
-           <li><a href="#">Einstecktücher</a></li>
-             <li><a href="#">Taschen</a></li>
+        <li><a href="{% url 'products' %}">Alle Kategorien</a></li>
+         <li><a href="{% url 'products' %}">Krawatten</a></li>
+          <li><a href="{% url 'products' %}">Fliegen</a></li>
+           <li><a href="{% url 'products' %}">Hüte</a></li> 
+           <li><a href="{% url 'products' %}">Gürtel</a></li>
+           <li><a href="{% url 'products' %}">Hemdknöpfe</a></li>
+           <li><a href="{% url 'products' %}">Manschettenknöpfe</a></li>
+           <li><a href="{% url 'products' %}">Einstecktücher</a></li>
+             <li><a href="{% url 'products' %}">Taschen</a></li>
          </ul>
         </li> 
          <li><a href="#">Schuhe</a>
@@ -73,7 +74,7 @@
          </ul>
          </li>
         
-        <li><a href="#">Sale</a>
+        <li><a href="{% url 'products' %}">Sale</a>
           <ul>
          <li><a href="{% url 'products' %}">Alle Kategorien</a></li>
           <li><a href="{% url 'products' %}">Bekleidung</a></li>

@@ -1,0 +1,42 @@
+shop-item-title {
+font-size: 12px;
+color: black;
+
+}
+shop-item-price {
+font-size: 13px;
+color:black;
+font-weight: 800px;
+}
+
+cart-item-title {
+font-size: 12px;
+}
+
+cart-total-title {
+font-size: 12px;
+}
+
+cart-total-price {
+font-size: 13px;
+font-weight: 500px;
+}
+
+cart-price cart-column {
+font-size: 12px;
+}
+
+shop-item {
+margin-top: 20px;
+}
+
+btn btn-primary shop-item-button {
+background-color:  black;
+border-color: black;
+}
+
+
+
+cart-total {
+margin-top: 30px;
+}

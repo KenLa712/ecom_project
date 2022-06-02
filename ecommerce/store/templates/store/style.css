@@ -815,11 +815,17 @@ background-color: black;
     color: #064579;
 }
 
+b {
+  font-size: 15px;
+  color: brown;
+}
+
 .main {
     margin-left: 140px; /* Same width as the sidebar + left position in px */
     font-size: 28px; /* Increased text to enable scrolling */
     padding: 0px 10px;
 }
+
 
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
@@ -1016,6 +1022,12 @@ img {
 img2 {
   
   height: 30; }
+
+imglogo {
+     max-width: 40%;
+    height: 50px;
+
+}
 
 figure {
   margin: 0; }
