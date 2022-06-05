@@ -1,8 +1,12 @@
 <!-- Inheriting from main.html-->
-{% extends 'store/main.html' %}
+<!DOCTYPE html>
 {% load static %}
 {% block content %}
-
+<head>
+  <link href="{% static 'css/warenkorbStyle.css' %}" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="{% static 'css/warenkorbStyle.css' %}" type="text/css" rel="stylesheet">
+</head>
 <!------HEADER---------------------------------------->
 <body class="bg-light">
 
@@ -10,12 +14,13 @@
       <div class="py-5 text-center">
         <h2>Daten</h2>
         <p class="lead">Füllen Sie bitte die angegeben Felder aus um Ihren Einkauf bezahlen zu können.</p>
+        
       </div>
 
 <!-------------------------------------------------------------------------------------------------------------------->
 
 
-	<form action= "http://localhost:8090/payment" target="_blank">
+	<form action= "" target="_blank">
         <div class="col-md-8 order-md-1">
           <h4 class="mb-3">Rechnungsadresse</h4>
           <form class="needs-validation" novalidate>
@@ -128,14 +133,7 @@
                  </div>
             </div>
 			</form>
-			
-
-
-            <!------FOOTER---------------------------------------->
-<div>
-</div>
-
-
+	
 
 
     <!-- Bootstrap core JavaScript

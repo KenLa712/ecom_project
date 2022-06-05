@@ -1,0 +1,221 @@
+
+header {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+
+}
+
+#logo {
+    margin-left: 600px;
+	margin-top: 10px;
+	width: 80px;
+	float: left;
+
+}
+
+#logo:hover{
+  opacity: 0,5;
+}
+
+#logo img {
+   width: 80%;
+}
+
+/* The alert message box */
+.alert {
+    padding: 10px;
+    background-color: grey;
+    color: white;
+    margin-bottom: 15px;
+	font-size: 12px;
+	text-align: left;
+
+
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+}
+
+ /* MAIN NAVI -----------------------------------*/
+
+nav{
+  float: right;
+  margin: 15px;
+  position: relative;
+z-index:1;
+}
+
+nav ul {
+text-align: center;
+margin: 0px;
+padding: 0px;
+list-style: none;
+float: center;
+right: 50%;
+
+}
+
+nav ul li {
+float: left;
+width: 180px;
+height: 28px;
+line-height: 25px;
+font-size: 11px;
+background-color: white;
+text-transform: uppercase;
+}
+
+nav ul li a {
+text-decoration: none;
+display: block;
+line-height: inherit;
+cursor: pointer;
+color: #000000;
+position: relative;
+text-transform: uppercase;
+}
+
+
+ul li a:hover {
+background-color: silver;
+
+}
+
+ul li ul li {
+	float: left;
+	display: none;
+	font-weight: 100;
+	font-size: 11px;
+	text-align: center;
+
+}
+
+ul li:hover ul li {
+	display: block;
+}
+
+.form-submit {
+  text-align: right;
+  padding-top: 27px; 
+  width: 100px;}
+
+.submit {
+  width: 140px;
+  height: 40px;
+  display: inline-block;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 13px;
+  padding: 10px;
+  border: none;
+  cursor: pointer; 
+  float: left;
+  margin-top: 20px;
+ }
+
+´
+
+#submit {
+  background: #ff6801;
+  color: #fff; }
+  #submit:hover {
+    background-color: #cd5300; }
+
+/* ----------FOOTER------------*/
+
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+width: 6%;
+margin-left: 34px;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+width: 6%;
+
+}
+
+.fa-snapchat-ghost {
+background: #fffc00;
+color: white;
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  width: 6%;
+
+}
+
+.fa-instagram {
+background: #125688;
+color: white;
+width: 6%;
+
+}
+
+
+.footer {
+position: relative; 
+margin: 0 auto;
+left: 0px;
+bottom: 0px; 
+width: 100%; 
+  background-color: black;
+color: white;
+list-style: none;
+font-family: Roboto - sans serif;
+font-size: 11px;
+line-height: 15px;
+padding: 10px;
+text-transform: uppercase;
+z-index: 3;
+margin-top: 20px;
+
+}
+
+.footer ul li {
+display:inline;
+padding: 10px;
+color: white;
+float: center;
+
+}
+
+
+
