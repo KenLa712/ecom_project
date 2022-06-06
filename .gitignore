@@ -56,3 +56,7 @@ docs/_build/
 # PyBuilder
 target/
 ecommerce/store/__pycache__/admin.cpython-39.pyc
+ecommerce/store/__pycache__/models.cpython-39.pyc
+ecommerce/store/__pycache__/admin.cpython-39.pyc
+*.pyc
+*.pyc
