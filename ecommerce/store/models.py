@@ -57,7 +57,8 @@ class Produkt(models.Model):
 
 class Warenkorb(models.Model):
     zwischensumme = models.FloatField(null=True)
-    kunde = models.ForeignKey(Kunde, on_delete=models.SET_NULL, null=True, blank=True)
+    kunde = models.OneToOneField(Kunde, on_delete=models.SET_NULL, null=True, blank=True)
+    
     
     class Meta:
         verbose_name_plural = "5. Warenkörbe"
