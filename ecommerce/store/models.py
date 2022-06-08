@@ -12,6 +12,9 @@ class Kunde(models.Model):
     def __str__(self):
         return self.email
 
+    class Meta:
+        verbose_name_plural = "1. Kunden"
+
 class Bestellung(models.Model):
     bestelldatum = models.DateTimeField(auto_now_add=True)
     bestellsumme = models.FloatField(null = False)
@@ -20,6 +23,9 @@ class Bestellung(models.Model):
 
     def __str__(self):
         return str(self.id)
+
+    class Meta:
+        verbose_name_plural = "2. Bestellungen"
 
 class Zahlung(models.Model):
     summe = models.FloatField()
@@ -45,11 +51,17 @@ class Produkt(models.Model):
         except:
             url = ''
         return url 
+    
+    class Meta:
+        verbose_name_plural = "3. Produkte"
 
 class Warenkorb(models.Model):
     zwischensumme = models.FloatField(null=True)
     kunde = models.ForeignKey(Kunde, on_delete=models.SET_NULL, null=True, blank=True)
     
+    class Meta:
+        verbose_name_plural = "5. Warenkörbe"
+
 class WarenkorbProdukt(models.Model):
     warenkorb = models.ForeignKey(Warenkorb, on_delete=models.SET_NULL, null=True, blank=True)
     produkt = models.ForeignKey(Produkt, on_delete=models.SET_NULL, null=True)
@@ -57,6 +69,9 @@ class WarenkorbProdukt(models.Model):
 
     def __str__(self):
         return str(self.id)
+
+    class Meta:
+        verbose_name_plural = "4. Warenkorbprodukte"
 
 class BestellungProdukt(models.Model):
     warenkorb = models.ForeignKey(Bestellung, on_delete=models.SET_NULL, null=True, blank=True)
