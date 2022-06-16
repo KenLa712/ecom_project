@@ -1,10 +1,13 @@
 {% extends 'store/main.html' %}
 {% load static %}
 {% block content %}
-{% load crispy_forms_tags %}         
+{% load crispy_forms_tags %}        
+
+
 
 <!--Register-->
-<div class="container py-5" style="margin-top: 450px;">
+<div class="container py-5" style="margin-top: 300px;">
+	{% include 'messages.html' %}
 	<h1>Register</h1>
 	<form method="POST">
 		{% csrf_token %}

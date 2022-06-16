@@ -9,7 +9,10 @@
     <h3>Bitte geben Sie Ihre Anmeldedaten ein.</h3>
     <input type="email" placeholder="E-Mail"/>
     <input type="password" placeholder="Passwort"/>
-    <input type="submit" value="Login">
+    <form method="GET" action="{% url 'store' %}">
+      <input type="submit" value="Login">
+    </form>
+   
     <h4><a href="{% url 'store' %}"</a>Zurück zur Startseite</h4>
     <h4><a href="{% url 'register' %}"</a>Noch kein Account?</h4> 
     

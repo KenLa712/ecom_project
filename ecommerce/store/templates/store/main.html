@@ -4,15 +4,23 @@
 <head>
 	
     <meta charset="utf-8">
-    <title>Cooler E-Com Shop yaa</title>
+    <title>Gentleman-Shop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
 	<link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-  
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <link rel = "icon" href = 
+    "{% static 'images/logo.jpg' %}" 
+        type = "image/x-icon">
 </head>
 <body>
-
+    
     <header>
       <a href="http://127.0.0.1:8000/"><img class="imglogo" src="{% static 'images/logo.jpg' %}" alt="Logo" style="width: auto; height: 150%;"></a>
 
@@ -102,15 +110,19 @@
         </form>
         </form>
       </div>
+      
     <hr>
+    
 
      <div class="container">
+
             <br>
+            
             {% block content %}
 
 
              {% endblock content %}
      </div>
-
+     
 </body>
 </html>
