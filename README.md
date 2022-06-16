@@ -2,11 +2,15 @@
 
 Tool-Setup:
 
+How to install Django: https://docs.djangoproject.com/en/4.0/topics/install/
+How to install sqlite: https://sqlitebrowser.org/dl/
+
+cmd:
 install django
 install python
 
-3. pip install virtualenv
-4. virtualenv .env
-5. python -m pip install django
-6. python3 manage.py runserver
-7. ENV: source .env/bin/activate
+1. pip install virtualenv
+2. virtualenv .env
+3. python -m pip install django
+4. ENV: source .env/bin/activate (mac)
+5. python3 manage.py runserver
